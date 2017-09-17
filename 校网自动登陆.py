@@ -98,8 +98,8 @@ def getyzm():
 if 1:
     driver = webdriver.Chrome()
     driver.get("http://202.113.110.24:8088/tjsfjw/cas/login.action")
-    driver.find_element_by_id('yhmc').send_keys('1630200127')
-    driver.find_element_by_id('yhmm').send_keys('83506876ok')
+    driver.find_element_by_id('yhmc').send_keys('帐号')
+    driver.find_element_by_id('yhmm').send_keys('密码')
     driver.find_element_by_id('randnumber').click()
     cookie={'JSESSIONID':driver.get_cookies()[0]['value']}
     downloadpic(cookie)
